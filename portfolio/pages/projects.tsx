@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import Head  from 'next/head'
 import React, { useState } from 'react'
 import { fadeInup, routeAnimation, stagger } from '../animations'
 import ProjectCard from '../components/ProjectCard'
@@ -34,6 +35,9 @@ const Projects = () => {
       animate='animate'
       exit='exit'
     >
+      <Head>
+        <title> WEb Developer | Projects | Sumit Dey</title>
+      </Head>
 
       <ProjectsNavbar handlerFilterCategory={handlerFilterCategory}
         active={active}

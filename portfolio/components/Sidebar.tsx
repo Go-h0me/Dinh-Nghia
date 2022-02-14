@@ -40,16 +40,21 @@ const Sidebar = () => {
       </a>
       {/* //social icon */}
       <div className='flex justify-around w-9/12 mx-auto my-5 text-green-500 md:w-full'
-      
+
       >
-        <a href=''>
+        <a href='https://www.youtube.com/channel/UCT56QkUg72n-PzrcyrkClhQ' aria-label='Youtube'>
+
           <AiFillYoutube className='w-8 h-8 cursor-pointer' />
         </a>
-        <a href=''>
-          <AiFillGithub className='w-8 h-8 cursor-pointer' />
-        </a>
-        <a href=''>
+        <a href='https://www.facebook.com/gioi.phat.1'
+        aria-label="facebook"
+        >
           <AiFillLinkedin className='w-8 h-8 cursor-pointer' />
+        </a>
+        <a href='https://github.com/Go-h0me/react-tailwin/tree/main/spotify'>
+          <AiFillGithub className='w-8 h-8 cursor-pointer'
+          aria-label="Github"
+          />
         </a>
       </div>
       {/* address */}

@@ -5,19 +5,23 @@ import { GetServerSideProps, GetServerSidePropsContext, GetStaticPropsContext } 
 import ServiceCard from "../components/ServiceCard";
 import { motion } from "framer-motion";
 import { fadeInup, routeAnimation, stagger } from "../animations";
+import Head from "next/head";
+
 
 const About = ({endpoint}) => {
   // console.log("CLIENT", services);
 console.log(endpoint);
 
   return (
-    <motion.div
+    <div
       className="flex flex-col px-6 pt-1-grow"
-      variants={routeAnimation}
-      initial='initial'
-      animate='animate'
-      exit='exit'
+     
     >
+      <Head>
+        <title>
+          Web Developer | portfolio | Sumit
+        </title>
+      </Head>
       <h6 className="my-3 font-medium">
         I am currently pursuing B.Tech Degree(Final Year) in Computer Science
         Engineering from Academy of Technology. I have 3+ years of experience in
@@ -43,7 +47,7 @@ console.log(endpoint);
           ))}
         </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
